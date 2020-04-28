@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/login_image"
+        android:src="@drawable/register"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_image"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="17dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@android:color/white"
+        android:drawableStart="@android:drawable/ic_dialog_email"
+        android:hint="  Email..."
+        android:inputType="textEmailAddress"
+        android:padding="4dp"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_email"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/buttons"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:hint="  Password..."
+        android:inputType="textPassword"
+        android:backgroundTint="@android:color/white"
+        android:padding="6dp"
+        tools:ignore="RtlCompat" />
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_password"
+        android:padding="2dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="17dp"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@android:color/white"
+        android:text="register"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/already_have_an_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_button"
+        android:layout_centerHorizontal="true"
+        android:text="Already have an account"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="2dp"
+        android:textAlignment="textEnd"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:gravity="end" />
+
+</RelativeLayout>

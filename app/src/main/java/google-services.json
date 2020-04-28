@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065493705582",
+    "firebase_url": "https://leowhatsappseo.firebaseio.com",
+    "project_id": "leowhatsappseo",
+    "storage_bucket": "leowhatsappseo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065493705582:android:074dd32dcee271ad50077f",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065493705582-k1m15rfvaonoucdv2pnud8lcpfr2685f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB73QBzoQJKalMzGwHawJZQ7vK28f3GVbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065493705582-k1m15rfvaonoucdv2pnud8lcpfr2685f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

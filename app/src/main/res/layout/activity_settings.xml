@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".SettingsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/profil"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/username_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/fui_ic_anonymous_white_24dp"
+        android:hint="Username"
+        android:drawableLeft="@drawable/fui_ic_anonymous_white_24dp"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:inputType="textMultiLine"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/status_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="hello here is status line"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/username_settings"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:inputType="textMultiLine"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:padding="6dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/update_button_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttons"
+        android:layout_below="@+id/status_settings"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="UPDATE"
+        android:backgroundTint="#C37504"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:padding="6dp"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

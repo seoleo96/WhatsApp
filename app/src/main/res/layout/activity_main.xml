@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="#ED9F2C"
+            app:tabTextColor="@android:color/white"
+            android:outlineSpotShadowColor="@android:color/white"
+            app:tabSelectedTextColor="@android:color/black"
+            app:tabMode="fixed">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/chat_tab1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Chat"
+                android:outlineSpotShadowColor="@color/cardview_dark_background"
+                android:outlineAmbientShadowColor="@color/colorAccent"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/group_chat_tab2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="group" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/contacts_tab3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="contacts" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</RelativeLayout>
